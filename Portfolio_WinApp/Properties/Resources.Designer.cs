@@ -63,6 +63,26 @@ namespace Portfolio_WinApp.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _3175 {
+            get {
+                object obj = ResourceManager.GetObject("3175", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _31751 {
+            get {
+                object obj = ResourceManager.GetObject("31751", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap chat {
             get {
                 object obj = ResourceManager.GetObject("chat", resourceCulture);
@@ -86,6 +106,26 @@ namespace Portfolio_WinApp.Properties {
         internal static System.Drawing.Bitmap exit_full_screen {
             get {
                 object obj = ResourceManager.GetObject("exit-full-screen", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap gradientChat {
+            get {
+                object obj = ResourceManager.GetObject("gradientChat", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap gradientChat2 {
+            get {
+                object obj = ResourceManager.GetObject("gradientChat2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

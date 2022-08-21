@@ -84,6 +84,9 @@
   <ItemGroup>
     <Content Include="Icons\chat.png" />
     <Content Include="Icons\exit-full-screen.png" />
+    <Content Include="Icons\gradientChat.png" />
+    <Content Include="Icons\gradientChat2.png" />
+    <Content Include="Images\3175.jpg" />
     <Content Include="Images\Michał.jpg" />
     <None Include="Icons\exit.png" />
   </ItemGroup>
