@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.panelMain = new System.Windows.Forms.Panel();
             this.lblLogin = new System.Windows.Forms.Label();
             this.txtPassword = new System.Windows.Forms.TextBox();
@@ -37,6 +38,7 @@
             this.pbxChat = new System.Windows.Forms.PictureBox();
             this.pbxMichal = new System.Windows.Forms.PictureBox();
             this.lblInfo = new System.Windows.Forms.Label();
+            this.tInfo = new System.Windows.Forms.Timer(this.components);
             this.panelMain.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbxChat)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxMichal)).BeginInit();
@@ -144,17 +146,21 @@
             // 
             // lblInfo
             // 
-            this.lblInfo.AutoSize = true;
             this.lblInfo.BackColor = System.Drawing.Color.Transparent;
             this.lblInfo.Font = new System.Drawing.Font("Orator Std", 15F);
             this.lblInfo.ForeColor = System.Drawing.Color.Black;
             this.lblInfo.Image = global::Portfolio_WinApp.Properties.Resources.chat;
-            this.lblInfo.Location = new System.Drawing.Point(205, 101);
+            this.lblInfo.Location = new System.Drawing.Point(205, 100);
             this.lblInfo.Name = "lblInfo";
-            this.lblInfo.Size = new System.Drawing.Size(168, 81);
+            this.lblInfo.Size = new System.Drawing.Size(170, 86);
             this.lblInfo.TabIndex = 7;
             this.lblInfo.Text = "Sing in \r\nto see \r\nmy portfolio!";
             this.lblInfo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // tInfo
+            // 
+            this.tInfo.Interval = 75;
+            this.tInfo.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // Form1
             // 
@@ -167,6 +173,7 @@
             this.MaximizeBox = false;
             this.Name = "Form1";
             this.Text = "Michał Kordos - Portfolio_WinApp";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.panelMain.ResumeLayout(false);
             this.panelMain.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbxChat)).EndInit();
@@ -185,6 +192,7 @@
         private System.Windows.Forms.PictureBox pbxChat;
         private System.Windows.Forms.Label lblTitle;
         private System.Windows.Forms.Label lblInfo;
+        private System.Windows.Forms.Timer tInfo;
     }
 }
 
