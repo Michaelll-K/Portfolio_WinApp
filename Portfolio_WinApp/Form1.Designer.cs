@@ -314,6 +314,9 @@
             this.Name = "Form1";
             this.Text = "Michał Kordos - Portfolio_WinApp";
             this.Load += new System.EventHandler(this.Form1_Load);
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Form1_MouseDown);
+            this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Form1_MouseMove);
+            this.MouseUp += new System.Windows.Forms.MouseEventHandler(this.Form1_MouseUp);
             this.panelMain.ResumeLayout(false);
             this.panelMain.PerformLayout();
             this.panelInfo.ResumeLayout(false);

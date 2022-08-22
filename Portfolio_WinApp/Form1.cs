@@ -14,6 +14,10 @@ namespace Portfolio_WinApp
     {
         private string text;
         private int len = 0;
+
+        private bool drag;
+        private int down;
+        private int up;
         public Form1()
         {
             InitializeComponent();
@@ -40,6 +44,33 @@ namespace Portfolio_WinApp
         private void btnExit_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private void Form1_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
+            {
+                drag = true;
+                down = e.X;
+                up = e.Y;
+            }
+        }
+
+        private void Form1_MouseUp(object sender, MouseEventArgs e)
+        {
+            drag = false;
+        }
+
+        private void Form1_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (drag)
+            {
+                Point temp = new Point();
+                temp.X = Location.X + (e.X - down);
+                temp.Y = Location.Y + (e.Y - up);
+                Location = temp;
+                temp = Point.Empty;
+            }
         }
     }
 }
