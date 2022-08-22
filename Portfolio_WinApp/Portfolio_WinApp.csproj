@@ -260,10 +260,13 @@
     <Content Include="Icons\box.png" />
     <Content Include="Icons\chat.png" />
     <Content Include="Icons\cross.png" />
+    <Content Include="Icons\document.png" />
     <Content Include="Icons\exit-full-screen.png" />
+    <Content Include="Icons\github.png" />
     <Content Include="Icons\gradientChat.png" />
     <Content Include="Icons\gradientChat2.png" />
     <Content Include="Icons\left.png" />
+    <Content Include="Icons\linkedin.png" />
     <Content Include="Icons\square.png" />
     <Content Include="Icons\user.png" />
     <Content Include="Images\3175.jpg" />

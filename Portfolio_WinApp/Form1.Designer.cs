@@ -33,9 +33,13 @@
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.btnExit = new System.Windows.Forms.Button();
             this.panelMain = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblMichal = new System.Windows.Forms.Label();
             this.lblPortfolio = new System.Windows.Forms.Label();
             this.panelInfo = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.btnGitHub = new System.Windows.Forms.Button();
+            this.btnLinkedIn = new System.Windows.Forms.Button();
+            this.btnSignUp = new System.Windows.Forms.Button();
             this.panelLogin = new System.Windows.Forms.Panel();
             this.txtLogin = new System.Windows.Forms.TextBox();
             this.txtPassword = new System.Windows.Forms.TextBox();
@@ -44,7 +48,9 @@
             this.pbxMichal = new System.Windows.Forms.PictureBox();
             this.lblInfo = new System.Windows.Forms.Label();
             this.pbxChat = new System.Windows.Forms.PictureBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.panelMain.SuspendLayout();
+            this.panelInfo.SuspendLayout();
             this.panelLogin.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbxMichal)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxChat)).BeginInit();
@@ -63,9 +69,10 @@
             // btnExit
             // 
             this.btnExit.BackgroundImage = global::Portfolio_WinApp.Properties.Resources.cross;
+            this.btnExit.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnExit.FlatAppearance.BorderSize = 0;
             this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnExit.Location = new System.Drawing.Point(1057, 4);
+            this.btnExit.Location = new System.Drawing.Point(1065, 5);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(25, 25);
             this.btnExit.TabIndex = 8;
@@ -76,7 +83,7 @@
             // 
             this.panelMain.BackColor = System.Drawing.Color.Transparent;
             this.panelMain.BackgroundImage = global::Portfolio_WinApp.Properties.Resources._3175;
-            this.panelMain.Controls.Add(this.label1);
+            this.panelMain.Controls.Add(this.lblMichal);
             this.panelMain.Controls.Add(this.lblPortfolio);
             this.panelMain.Controls.Add(this.panelInfo);
             this.panelMain.Controls.Add(this.panelLogin);
@@ -87,19 +94,19 @@
             this.panelMain.Size = new System.Drawing.Size(1101, 542);
             this.panelMain.TabIndex = 2;
             // 
-            // label1
+            // lblMichal
             // 
-            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Malgun Gothic", 20F);
-            this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(61, 142);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(249, 74);
-            this.label1.TabIndex = 11;
-            this.label1.Text = "Michał Kordos\r\nbackend developer";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblMichal.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblMichal.AutoSize = true;
+            this.lblMichal.BackColor = System.Drawing.Color.Transparent;
+            this.lblMichal.Font = new System.Drawing.Font("Malgun Gothic", 20F);
+            this.lblMichal.ForeColor = System.Drawing.Color.Black;
+            this.lblMichal.Location = new System.Drawing.Point(61, 142);
+            this.lblMichal.Name = "lblMichal";
+            this.lblMichal.Size = new System.Drawing.Size(249, 74);
+            this.lblMichal.TabIndex = 11;
+            this.lblMichal.Text = "Michał Kordos\r\nbackend developer";
+            this.lblMichal.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblPortfolio
             // 
@@ -114,10 +121,75 @@
             // panelInfo
             // 
             this.panelInfo.BackColor = System.Drawing.Color.AntiqueWhite;
+            this.panelInfo.Controls.Add(this.label1);
+            this.panelInfo.Controls.Add(this.btnGitHub);
+            this.panelInfo.Controls.Add(this.btnLinkedIn);
+            this.panelInfo.Controls.Add(this.btnSignUp);
             this.panelInfo.Location = new System.Drawing.Point(936, 0);
             this.panelInfo.Name = "panelInfo";
             this.panelInfo.Size = new System.Drawing.Size(165, 542);
             this.panelInfo.TabIndex = 9;
+            // 
+            // label1
+            // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Malgun Gothic", 20F);
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(3, 385);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(163, 74);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "Don\'t know\r\nwhat to do?";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // btnGitHub
+            // 
+            this.btnGitHub.BackColor = System.Drawing.Color.Transparent;
+            this.btnGitHub.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnGitHub.FlatAppearance.BorderSize = 0;
+            this.btnGitHub.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGitHub.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btnGitHub.Image = global::Portfolio_WinApp.Properties.Resources.github;
+            this.btnGitHub.Location = new System.Drawing.Point(10, 142);
+            this.btnGitHub.Name = "btnGitHub";
+            this.btnGitHub.Size = new System.Drawing.Size(100, 100);
+            this.btnGitHub.TabIndex = 3;
+            this.btnGitHub.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnGitHub.UseVisualStyleBackColor = false;
+            // 
+            // btnLinkedIn
+            // 
+            this.btnLinkedIn.BackColor = System.Drawing.Color.Transparent;
+            this.btnLinkedIn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnLinkedIn.FlatAppearance.BorderSize = 0;
+            this.btnLinkedIn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLinkedIn.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btnLinkedIn.Image = global::Portfolio_WinApp.Properties.Resources.linkedin;
+            this.btnLinkedIn.Location = new System.Drawing.Point(10, 14);
+            this.btnLinkedIn.Name = "btnLinkedIn";
+            this.btnLinkedIn.Size = new System.Drawing.Size(100, 100);
+            this.btnLinkedIn.TabIndex = 2;
+            this.btnLinkedIn.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnLinkedIn.UseVisualStyleBackColor = false;
+            // 
+            // btnSignUp
+            // 
+            this.btnSignUp.BackColor = System.Drawing.Color.LightCoral;
+            this.btnSignUp.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSignUp.FlatAppearance.BorderSize = 0;
+            this.btnSignUp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSignUp.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btnSignUp.Image = global::Portfolio_WinApp.Properties.Resources.document;
+            this.btnSignUp.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnSignUp.Location = new System.Drawing.Point(3, 462);
+            this.btnSignUp.Name = "btnSignUp";
+            this.btnSignUp.Size = new System.Drawing.Size(152, 57);
+            this.btnSignUp.TabIndex = 0;
+            this.btnSignUp.Text = "Sign Up!";
+            this.btnSignUp.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSignUp.UseVisualStyleBackColor = false;
             // 
             // panelLogin
             // 
@@ -214,6 +286,20 @@
             this.pbxChat.TabIndex = 6;
             this.pbxChat.TabStop = false;
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Transparent;
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Brush Script Std", 20F);
+            this.button1.Location = new System.Drawing.Point(12, -4);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(168, 37);
+            this.button1.TabIndex = 9;
+            this.button1.Text = "My Portfolio";
+            this.button1.UseVisualStyleBackColor = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -222,6 +308,7 @@
             this.ClientSize = new System.Drawing.Size(1101, 573);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.panelMain);
+            this.Controls.Add(this.button1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximizeBox = false;
             this.Name = "Form1";
@@ -229,6 +316,8 @@
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panelMain.ResumeLayout(false);
             this.panelMain.PerformLayout();
+            this.panelInfo.ResumeLayout(false);
+            this.panelInfo.PerformLayout();
             this.panelLogin.ResumeLayout(false);
             this.panelLogin.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbxMichal)).EndInit();
@@ -249,10 +338,15 @@
         private System.Windows.Forms.Timer tInfo;
         private System.Windows.Forms.Button btnExit;
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblMichal;
         private System.Windows.Forms.Label lblPortfolio;
         private System.Windows.Forms.Panel panelInfo;
         private System.Windows.Forms.Panel panelLogin;
+        private System.Windows.Forms.Button btnSignUp;
+        private System.Windows.Forms.Button btnGitHub;
+        private System.Windows.Forms.Button btnLinkedIn;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button button1;
     }
 }
 
