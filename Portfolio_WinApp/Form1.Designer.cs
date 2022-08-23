@@ -31,7 +31,6 @@
             this.components = new System.ComponentModel.Container();
             this.tInfo = new System.Windows.Forms.Timer(this.components);
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
-            this.btnHome = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
             this.panelMain = new System.Windows.Forms.Panel();
             this.lblMichal = new System.Windows.Forms.Label();
@@ -49,6 +48,7 @@
             this.pbxMichal = new System.Windows.Forms.PictureBox();
             this.lblInfo = new System.Windows.Forms.Label();
             this.pbxChat = new System.Windows.Forms.PictureBox();
+            this.btnHome = new System.Windows.Forms.Button();
             this.panelMain.SuspendLayout();
             this.panelInfo.SuspendLayout();
             this.panelLogin.SuspendLayout();
@@ -65,21 +65,6 @@
             // 
             this.bunifuElipse1.ElipseRadius = 50;
             this.bunifuElipse1.TargetControl = this;
-            // 
-            // btnHome
-            // 
-            this.btnHome.BackColor = System.Drawing.Color.Transparent;
-            this.btnHome.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnHome.FlatAppearance.BorderSize = 0;
-            this.btnHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnHome.Font = new System.Drawing.Font("Brush Script Std", 20F);
-            this.btnHome.Location = new System.Drawing.Point(12, -4);
-            this.btnHome.Name = "btnHome";
-            this.btnHome.Size = new System.Drawing.Size(168, 37);
-            this.btnHome.TabIndex = 9;
-            this.btnHome.Text = "My Portfolio";
-            this.btnHome.UseVisualStyleBackColor = false;
-            this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
             // 
             // btnExit
             // 
@@ -301,6 +286,24 @@
             this.pbxChat.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbxChat.TabIndex = 6;
             this.pbxChat.TabStop = false;
+            // 
+            // btnHome
+            // 
+            this.btnHome.BackColor = System.Drawing.Color.Transparent;
+            this.btnHome.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnHome.FlatAppearance.BorderSize = 0;
+            this.btnHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnHome.Font = new System.Drawing.Font("Brush Script Std", 20F);
+            this.btnHome.Image = global::Portfolio_WinApp.Properties.Resources.go_back_arrow;
+            this.btnHome.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnHome.Location = new System.Drawing.Point(12, -4);
+            this.btnHome.Name = "btnHome";
+            this.btnHome.Size = new System.Drawing.Size(199, 37);
+            this.btnHome.TabIndex = 9;
+            this.btnHome.Text = "My Portfolio";
+            this.btnHome.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnHome.UseVisualStyleBackColor = false;
+            this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
             // 
             // Form1
             // 

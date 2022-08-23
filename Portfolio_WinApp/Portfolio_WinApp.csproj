@@ -359,6 +359,7 @@
     <Content Include="Icons\document.png" />
     <Content Include="Icons\exit-full-screen.png" />
     <Content Include="Icons\github.png" />
+    <Content Include="Icons\go-back-arrow.png" />
     <Content Include="Icons\gradientChat.png" />
     <Content Include="Icons\gradientChat2.png" />
     <Content Include="Icons\left.png" />
