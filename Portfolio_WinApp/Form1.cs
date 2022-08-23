@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Portfolio_WinApp.Controls;
 
 namespace Portfolio_WinApp
 {
@@ -23,11 +24,25 @@ namespace Portfolio_WinApp
             InitializeComponent();
         }
 
+        private void AddControl(UserControl control)
+        {
+            control.Dock = DockStyle.Fill;
+            control.Visible = false;
+            panelMain.Controls.Add(control);
+            control.BringToFront();
+        }
+
         private void Form1_Load(object sender, EventArgs e)
         {
+            //Info animation
             text = lblInfo.Text;
             lblInfo.Text = "";
             tInfo.Start();
+
+            //Adding hiden views
+            SignUpControl signUp = new SignUpControl();
+            AddControl(signUp);
+
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -71,6 +86,11 @@ namespace Portfolio_WinApp
                 Location = temp;
                 temp = Point.Empty;
             }
+        }
+
+        private void btnSignUp_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

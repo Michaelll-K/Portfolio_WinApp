@@ -31,6 +31,7 @@
             this.components = new System.ComponentModel.Container();
             this.tInfo = new System.Windows.Forms.Timer(this.components);
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.button1 = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
             this.panelMain = new System.Windows.Forms.Panel();
             this.lblMichal = new System.Windows.Forms.Label();
@@ -48,7 +49,6 @@
             this.pbxMichal = new System.Windows.Forms.PictureBox();
             this.lblInfo = new System.Windows.Forms.Label();
             this.pbxChat = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
             this.panelMain.SuspendLayout();
             this.panelInfo.SuspendLayout();
             this.panelLogin.SuspendLayout();
@@ -65,6 +65,20 @@
             // 
             this.bunifuElipse1.ElipseRadius = 50;
             this.bunifuElipse1.TargetControl = this;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Transparent;
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Brush Script Std", 20F);
+            this.button1.Location = new System.Drawing.Point(12, -4);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(168, 37);
+            this.button1.TabIndex = 9;
+            this.button1.Text = "My Portfolio";
+            this.button1.UseVisualStyleBackColor = false;
             // 
             // btnExit
             // 
@@ -190,6 +204,7 @@
             this.btnSignUp.Text = "Sign Up!";
             this.btnSignUp.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSignUp.UseVisualStyleBackColor = false;
+            this.btnSignUp.Click += new System.EventHandler(this.btnSignUp_Click);
             // 
             // panelLogin
             // 
@@ -286,20 +301,6 @@
             this.pbxChat.TabIndex = 6;
             this.pbxChat.TabStop = false;
             // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.Transparent;
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Brush Script Std", 20F);
-            this.button1.Location = new System.Drawing.Point(12, -4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(168, 37);
-            this.button1.TabIndex = 9;
-            this.button1.Text = "My Portfolio";
-            this.button1.UseVisualStyleBackColor = false;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -312,6 +313,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximizeBox = false;
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Michał Kordos - Portfolio_WinApp";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Form1_MouseDown);
