@@ -24,6 +24,8 @@ namespace Portfolio_WinApp
             InitializeComponent();
         }
 
+        private SignUpControl signUp;
+
         private void AddControl(UserControl control)
         {
             control.Dock = DockStyle.Fill;
@@ -40,7 +42,7 @@ namespace Portfolio_WinApp
             tInfo.Start();
 
             //Adding hiden views
-            SignUpControl signUp = new SignUpControl();
+            signUp = new SignUpControl();
             AddControl(signUp);
 
         }
@@ -90,7 +92,12 @@ namespace Portfolio_WinApp
 
         private void btnSignUp_Click(object sender, EventArgs e)
         {
+            signUp.Visible = true;
+        }
 
+        private void btnHome_Click(object sender, EventArgs e)
+        {
+            signUp.Visible = false;
         }
     }
 }

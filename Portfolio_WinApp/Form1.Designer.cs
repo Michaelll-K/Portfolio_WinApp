@@ -31,7 +31,7 @@
             this.components = new System.ComponentModel.Container();
             this.tInfo = new System.Windows.Forms.Timer(this.components);
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnHome = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
             this.panelMain = new System.Windows.Forms.Panel();
             this.lblMichal = new System.Windows.Forms.Label();
@@ -66,19 +66,20 @@
             this.bunifuElipse1.ElipseRadius = 50;
             this.bunifuElipse1.TargetControl = this;
             // 
-            // button1
+            // btnHome
             // 
-            this.button1.BackColor = System.Drawing.Color.Transparent;
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Brush Script Std", 20F);
-            this.button1.Location = new System.Drawing.Point(12, -4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(168, 37);
-            this.button1.TabIndex = 9;
-            this.button1.Text = "My Portfolio";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnHome.BackColor = System.Drawing.Color.Transparent;
+            this.btnHome.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnHome.FlatAppearance.BorderSize = 0;
+            this.btnHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnHome.Font = new System.Drawing.Font("Brush Script Std", 20F);
+            this.btnHome.Location = new System.Drawing.Point(12, -4);
+            this.btnHome.Name = "btnHome";
+            this.btnHome.Size = new System.Drawing.Size(168, 37);
+            this.btnHome.TabIndex = 9;
+            this.btnHome.Text = "My Portfolio";
+            this.btnHome.UseVisualStyleBackColor = false;
+            this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
             // 
             // btnExit
             // 
@@ -309,7 +310,7 @@
             this.ClientSize = new System.Drawing.Size(1101, 573);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.panelMain);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnHome);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximizeBox = false;
             this.Name = "Form1";
@@ -351,7 +352,7 @@
         private System.Windows.Forms.Button btnGitHub;
         private System.Windows.Forms.Button btnLinkedIn;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnHome;
     }
 }
 
