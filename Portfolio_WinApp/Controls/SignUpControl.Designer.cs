@@ -32,8 +32,19 @@
             this.lblMichal = new System.Windows.Forms.Label();
             this.lblPortfolio = new System.Windows.Forms.Label();
             this.lblInfo = new System.Windows.Forms.Label();
-            this.pbxChat = new System.Windows.Forms.PictureBox();
             this.tInfo = new System.Windows.Forms.Timer(this.components);
+            this.txtLogin = new System.Windows.Forms.TextBox();
+            this.txtPassword = new System.Windows.Forms.TextBox();
+            this.lblLogin = new System.Windows.Forms.Label();
+            this.lblPassword = new System.Windows.Forms.Label();
+            this.txtRepeatPassword = new System.Windows.Forms.TextBox();
+            this.lblRepeat = new System.Windows.Forms.Label();
+            this.btnSaveSignUp = new System.Windows.Forms.Button();
+            this.pbxChat = new System.Windows.Forms.PictureBox();
+            this.rbtImage1 = new System.Windows.Forms.RadioButton();
+            this.rbtImage2 = new System.Windows.Forms.RadioButton();
+            this.rbtImage3 = new System.Windows.Forms.RadioButton();
+            this.rbtImage4 = new System.Windows.Forms.RadioButton();
             ((System.ComponentModel.ISupportInitialize)(this.pbxChat)).BeginInit();
             this.SuspendLayout();
             // 
@@ -73,6 +84,98 @@
             this.lblInfo.Text = "Sign up!\r\nCreate your own account\r\nthat will be saved in database";
             this.lblInfo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // tInfo
+            // 
+            this.tInfo.Interval = 50;
+            this.tInfo.Tick += new System.EventHandler(this.tInfo_Tick);
+            // 
+            // txtLogin
+            // 
+            this.txtLogin.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtLogin.Font = new System.Drawing.Font("Yu Gothic UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.txtLogin.Location = new System.Drawing.Point(419, 142);
+            this.txtLogin.Name = "txtLogin";
+            this.txtLogin.Size = new System.Drawing.Size(358, 43);
+            this.txtLogin.TabIndex = 16;
+            this.txtLogin.Tag = "Enter your login";
+            this.txtLogin.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // txtPassword
+            // 
+            this.txtPassword.Font = new System.Drawing.Font("Yu Gothic UI", 20.25F);
+            this.txtPassword.Location = new System.Drawing.Point(419, 228);
+            this.txtPassword.Name = "txtPassword";
+            this.txtPassword.Size = new System.Drawing.Size(358, 43);
+            this.txtPassword.TabIndex = 17;
+            this.txtPassword.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // lblLogin
+            // 
+            this.lblLogin.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblLogin.AutoSize = true;
+            this.lblLogin.BackColor = System.Drawing.Color.Transparent;
+            this.lblLogin.Font = new System.Drawing.Font("Malgun Gothic", 20F);
+            this.lblLogin.ForeColor = System.Drawing.Color.Black;
+            this.lblLogin.Location = new System.Drawing.Point(480, 102);
+            this.lblLogin.Name = "lblLogin";
+            this.lblLogin.Size = new System.Drawing.Size(230, 37);
+            this.lblLogin.TabIndex = 18;
+            this.lblLogin.Text = "Create your login";
+            this.lblLogin.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblPassword
+            // 
+            this.lblPassword.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblPassword.AutoSize = true;
+            this.lblPassword.BackColor = System.Drawing.Color.Transparent;
+            this.lblPassword.Font = new System.Drawing.Font("Malgun Gothic", 20F);
+            this.lblPassword.ForeColor = System.Drawing.Color.Black;
+            this.lblPassword.Location = new System.Drawing.Point(459, 188);
+            this.lblPassword.Name = "lblPassword";
+            this.lblPassword.Size = new System.Drawing.Size(284, 37);
+            this.lblPassword.TabIndex = 19;
+            this.lblPassword.Text = "Create your password";
+            this.lblPassword.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // txtRepeatPassword
+            // 
+            this.txtRepeatPassword.Font = new System.Drawing.Font("Yu Gothic UI", 20.25F);
+            this.txtRepeatPassword.Location = new System.Drawing.Point(419, 314);
+            this.txtRepeatPassword.Name = "txtRepeatPassword";
+            this.txtRepeatPassword.Size = new System.Drawing.Size(358, 43);
+            this.txtRepeatPassword.TabIndex = 20;
+            this.txtRepeatPassword.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // lblRepeat
+            // 
+            this.lblRepeat.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblRepeat.AutoSize = true;
+            this.lblRepeat.BackColor = System.Drawing.Color.Transparent;
+            this.lblRepeat.Font = new System.Drawing.Font("Malgun Gothic", 20F);
+            this.lblRepeat.ForeColor = System.Drawing.Color.Black;
+            this.lblRepeat.Location = new System.Drawing.Point(459, 274);
+            this.lblRepeat.Name = "lblRepeat";
+            this.lblRepeat.Size = new System.Drawing.Size(289, 37);
+            this.lblRepeat.TabIndex = 21;
+            this.lblRepeat.Text = "Repeat your password";
+            this.lblRepeat.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // btnSaveSignUp
+            // 
+            this.btnSaveSignUp.BackColor = System.Drawing.Color.Coral;
+            this.btnSaveSignUp.FlatAppearance.BorderSize = 0;
+            this.btnSaveSignUp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSaveSignUp.Font = new System.Drawing.Font("Malgun Gothic", 20F);
+            this.btnSaveSignUp.Image = global::Portfolio_WinApp.Properties.Resources.right_arrows;
+            this.btnSaveSignUp.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnSaveSignUp.Location = new System.Drawing.Point(482, 402);
+            this.btnSaveSignUp.Name = "btnSaveSignUp";
+            this.btnSaveSignUp.Size = new System.Drawing.Size(261, 71);
+            this.btnSaveSignUp.TabIndex = 22;
+            this.btnSaveSignUp.Text = "Sign up!";
+            this.btnSaveSignUp.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSaveSignUp.UseVisualStyleBackColor = false;
+            // 
             // pbxChat
             // 
             this.pbxChat.BackColor = System.Drawing.Color.Transparent;
@@ -84,15 +187,65 @@
             this.pbxChat.TabIndex = 12;
             this.pbxChat.TabStop = false;
             // 
-            // tInfo
+            // rbtImage1
             // 
-            this.tInfo.Interval = 50;
-            this.tInfo.Tick += new System.EventHandler(this.tInfo_Tick);
+            this.rbtImage1.AutoSize = true;
+            this.rbtImage1.Location = new System.Drawing.Point(927, 142);
+            this.rbtImage1.Name = "rbtImage1";
+            this.rbtImage1.Size = new System.Drawing.Size(60, 17);
+            this.rbtImage1.TabIndex = 23;
+            this.rbtImage1.TabStop = true;
+            this.rbtImage1.Text = "Image1";
+            this.rbtImage1.UseVisualStyleBackColor = true;
+            // 
+            // rbtImage2
+            // 
+            this.rbtImage2.AutoSize = true;
+            this.rbtImage2.Location = new System.Drawing.Point(927, 199);
+            this.rbtImage2.Name = "rbtImage2";
+            this.rbtImage2.Size = new System.Drawing.Size(60, 17);
+            this.rbtImage2.TabIndex = 24;
+            this.rbtImage2.TabStop = true;
+            this.rbtImage2.Text = "Image2";
+            this.rbtImage2.UseVisualStyleBackColor = true;
+            // 
+            // rbtImage3
+            // 
+            this.rbtImage3.AutoSize = true;
+            this.rbtImage3.Location = new System.Drawing.Point(927, 248);
+            this.rbtImage3.Name = "rbtImage3";
+            this.rbtImage3.Size = new System.Drawing.Size(60, 17);
+            this.rbtImage3.TabIndex = 25;
+            this.rbtImage3.TabStop = true;
+            this.rbtImage3.Text = "Image3";
+            this.rbtImage3.UseVisualStyleBackColor = true;
+            // 
+            // rbtImage4
+            // 
+            this.rbtImage4.AutoSize = true;
+            this.rbtImage4.Location = new System.Drawing.Point(927, 294);
+            this.rbtImage4.Name = "rbtImage4";
+            this.rbtImage4.Size = new System.Drawing.Size(60, 17);
+            this.rbtImage4.TabIndex = 26;
+            this.rbtImage4.TabStop = true;
+            this.rbtImage4.Text = "Image4";
+            this.rbtImage4.UseVisualStyleBackColor = true;
             // 
             // SignUpControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.rbtImage4);
+            this.Controls.Add(this.rbtImage3);
+            this.Controls.Add(this.rbtImage2);
+            this.Controls.Add(this.rbtImage1);
+            this.Controls.Add(this.btnSaveSignUp);
+            this.Controls.Add(this.txtRepeatPassword);
+            this.Controls.Add(this.lblRepeat);
+            this.Controls.Add(this.txtLogin);
+            this.Controls.Add(this.txtPassword);
+            this.Controls.Add(this.lblLogin);
+            this.Controls.Add(this.lblPassword);
             this.Controls.Add(this.lblMichal);
             this.Controls.Add(this.lblPortfolio);
             this.Controls.Add(this.lblInfo);
@@ -113,5 +266,16 @@
         private System.Windows.Forms.Label lblInfo;
         private System.Windows.Forms.PictureBox pbxChat;
         private System.Windows.Forms.Timer tInfo;
+        private System.Windows.Forms.TextBox txtLogin;
+        private System.Windows.Forms.TextBox txtPassword;
+        private System.Windows.Forms.Label lblLogin;
+        private System.Windows.Forms.Label lblPassword;
+        private System.Windows.Forms.TextBox txtRepeatPassword;
+        private System.Windows.Forms.Label lblRepeat;
+        private System.Windows.Forms.Button btnSaveSignUp;
+        private System.Windows.Forms.RadioButton rbtImage1;
+        private System.Windows.Forms.RadioButton rbtImage2;
+        private System.Windows.Forms.RadioButton rbtImage3;
+        private System.Windows.Forms.RadioButton rbtImage4;
     }
 }

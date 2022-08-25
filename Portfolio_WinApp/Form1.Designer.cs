@@ -209,9 +209,9 @@
             // 
             this.txtLogin.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtLogin.Font = new System.Drawing.Font("Yu Gothic UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.txtLogin.Location = new System.Drawing.Point(67, 290);
+            this.txtLogin.Location = new System.Drawing.Point(109, 290);
             this.txtLogin.Name = "txtLogin";
-            this.txtLogin.Size = new System.Drawing.Size(429, 43);
+            this.txtLogin.Size = new System.Drawing.Size(358, 43);
             this.txtLogin.TabIndex = 0;
             this.txtLogin.Tag = "Enter your login";
             this.txtLogin.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -219,11 +219,12 @@
             // txtPassword
             // 
             this.txtPassword.Font = new System.Drawing.Font("Yu Gothic UI", 20.25F);
-            this.txtPassword.Location = new System.Drawing.Point(67, 376);
+            this.txtPassword.Location = new System.Drawing.Point(109, 376);
             this.txtPassword.Name = "txtPassword";
-            this.txtPassword.Size = new System.Drawing.Size(429, 43);
+            this.txtPassword.Size = new System.Drawing.Size(358, 43);
             this.txtPassword.TabIndex = 1;
             this.txtPassword.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtPassword.UseSystemPasswordChar = true;
             // 
             // lblLogin
             // 
