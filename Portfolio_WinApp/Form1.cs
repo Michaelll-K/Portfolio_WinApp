@@ -25,6 +25,7 @@ namespace Portfolio_WinApp
         }
 
         private SignUpControl signUp;
+        private AccountControl account;
 
         private void AddControl(UserControl control)
         {
@@ -45,6 +46,8 @@ namespace Portfolio_WinApp
             signUp = new SignUpControl();
             AddControl(signUp);
 
+            account = new AccountControl();
+            AddControl(account);
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -98,6 +101,12 @@ namespace Portfolio_WinApp
         private void btnHome_Click(object sender, EventArgs e)
         {
             signUp.Visible = false;
+            account.Visible = false;
+        }
+
+        private void btnSignIn_Click(object sender, EventArgs e)
+        {
+            account.Visible = true;
         }
     }
 }

@@ -41,6 +41,7 @@
             this.btnLinkedIn = new System.Windows.Forms.Button();
             this.btnSignUp = new System.Windows.Forms.Button();
             this.panelLogin = new System.Windows.Forms.Panel();
+            this.btnSignIn = new System.Windows.Forms.Button();
             this.txtLogin = new System.Windows.Forms.TextBox();
             this.txtPassword = new System.Windows.Forms.TextBox();
             this.lblLogin = new System.Windows.Forms.Label();
@@ -49,7 +50,6 @@
             this.lblInfo = new System.Windows.Forms.Label();
             this.pbxChat = new System.Windows.Forms.PictureBox();
             this.btnHome = new System.Windows.Forms.Button();
-            this.btnSignIn = new System.Windows.Forms.Button();
             this.panelMain.SuspendLayout();
             this.panelInfo.SuspendLayout();
             this.panelLogin.SuspendLayout();
@@ -207,6 +207,22 @@
             this.panelLogin.Size = new System.Drawing.Size(570, 542);
             this.panelLogin.TabIndex = 8;
             // 
+            // btnSignIn
+            // 
+            this.btnSignIn.BackColor = System.Drawing.Color.LightGoldenrodYellow;
+            this.btnSignIn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSignIn.FlatAppearance.BorderSize = 0;
+            this.btnSignIn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSignIn.Font = new System.Drawing.Font("Microsoft Sans Serif", 40F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btnSignIn.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnSignIn.Location = new System.Drawing.Point(139, 439);
+            this.btnSignIn.Name = "btnSignIn";
+            this.btnSignIn.Size = new System.Drawing.Size(314, 80);
+            this.btnSignIn.TabIndex = 5;
+            this.btnSignIn.Text = "Sign In!";
+            this.btnSignIn.UseVisualStyleBackColor = false;
+            this.btnSignIn.Click += new System.EventHandler(this.btnSignIn_Click);
+            // 
             // txtLogin
             // 
             this.txtLogin.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -307,21 +323,6 @@
             this.btnHome.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnHome.UseVisualStyleBackColor = false;
             this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
-            // 
-            // btnSignIn
-            // 
-            this.btnSignIn.BackColor = System.Drawing.Color.LightGoldenrodYellow;
-            this.btnSignIn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnSignIn.FlatAppearance.BorderSize = 0;
-            this.btnSignIn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSignIn.Font = new System.Drawing.Font("Microsoft Sans Serif", 40F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.btnSignIn.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnSignIn.Location = new System.Drawing.Point(139, 439);
-            this.btnSignIn.Name = "btnSignIn";
-            this.btnSignIn.Size = new System.Drawing.Size(314, 80);
-            this.btnSignIn.TabIndex = 5;
-            this.btnSignIn.Text = "Sign In!";
-            this.btnSignIn.UseVisualStyleBackColor = false;
             // 
             // Form1
             // 

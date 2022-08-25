@@ -32,15 +32,17 @@
             this.panelUser = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
+            this.btnSkills = new System.Windows.Forms.Button();
+            this.btnAboutMe = new System.Windows.Forms.Button();
+            this.btnExp = new System.Windows.Forms.Button();
+            this.btnEdu = new System.Windows.Forms.Button();
+            this.btnLinks = new System.Windows.Forms.Button();
+            this.btnContact = new System.Windows.Forms.Button();
+            this.btnRef = new System.Windows.Forms.Button();
+            this.lblMichal = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pbx)).BeginInit();
             this.panelUser.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -67,6 +69,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Lavender;
+            this.panel1.Controls.Add(this.lblMichal);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
@@ -76,123 +79,137 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Black;
-            this.panel2.Controls.Add(this.button5);
-            this.panel2.Controls.Add(this.button7);
-            this.panel2.Controls.Add(this.button8);
-            this.panel2.Controls.Add(this.button3);
-            this.panel2.Controls.Add(this.button4);
-            this.panel2.Controls.Add(this.button2);
-            this.panel2.Controls.Add(this.button1);
+            this.panel2.Controls.Add(this.btnLinks);
+            this.panel2.Controls.Add(this.btnContact);
+            this.panel2.Controls.Add(this.btnRef);
+            this.panel2.Controls.Add(this.btnExp);
+            this.panel2.Controls.Add(this.btnEdu);
+            this.panel2.Controls.Add(this.btnAboutMe);
+            this.panel2.Controls.Add(this.btnSkills);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel2.Location = new System.Drawing.Point(0, 442);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(786, 100);
             this.panel2.TabIndex = 1;
             // 
-            // button1
+            // btnSkills
             // 
-            this.button1.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Malgun Gothic", 12F);
-            this.button1.Location = new System.Drawing.Point(126, 0);
-            this.button1.Margin = new System.Windows.Forms.Padding(3, 3, 15, 3);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(100, 100);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "About Me";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnSkills.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.btnSkills.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btnSkills.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSkills.Font = new System.Drawing.Font("Malgun Gothic", 12F);
+            this.btnSkills.Location = new System.Drawing.Point(125, 0);
+            this.btnSkills.Margin = new System.Windows.Forms.Padding(3, 3, 15, 3);
+            this.btnSkills.Name = "btnSkills";
+            this.btnSkills.Size = new System.Drawing.Size(101, 100);
+            this.btnSkills.TabIndex = 0;
+            this.btnSkills.Text = "Skills and Abilities";
+            this.btnSkills.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnSkills.UseVisualStyleBackColor = false;
             // 
-            // button2
+            // btnAboutMe
             // 
-            this.button2.BackColor = System.Drawing.Color.CornflowerBlue;
-            this.button2.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Malgun Gothic", 12F);
-            this.button2.Location = new System.Drawing.Point(18, 0);
-            this.button2.Margin = new System.Windows.Forms.Padding(3, 3, 15, 3);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(100, 100);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "About Me";
-            this.button2.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button2.UseVisualStyleBackColor = false;
+            this.btnAboutMe.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.btnAboutMe.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btnAboutMe.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAboutMe.Font = new System.Drawing.Font("Malgun Gothic", 12F);
+            this.btnAboutMe.Location = new System.Drawing.Point(17, 0);
+            this.btnAboutMe.Margin = new System.Windows.Forms.Padding(3, 3, 15, 3);
+            this.btnAboutMe.Name = "btnAboutMe";
+            this.btnAboutMe.Size = new System.Drawing.Size(101, 100);
+            this.btnAboutMe.TabIndex = 1;
+            this.btnAboutMe.Text = "About Me";
+            this.btnAboutMe.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnAboutMe.UseVisualStyleBackColor = false;
             // 
-            // button3
+            // btnExp
             // 
-            this.button3.BackColor = System.Drawing.Color.CornflowerBlue;
-            this.button3.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Malgun Gothic", 12F);
-            this.button3.Location = new System.Drawing.Point(235, 0);
-            this.button3.Margin = new System.Windows.Forms.Padding(3, 3, 15, 3);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(100, 100);
-            this.button3.TabIndex = 3;
-            this.button3.Text = "About Me";
-            this.button3.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button3.UseVisualStyleBackColor = false;
+            this.btnExp.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.btnExp.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btnExp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnExp.Font = new System.Drawing.Font("Malgun Gothic", 12F);
+            this.btnExp.Location = new System.Drawing.Point(234, 0);
+            this.btnExp.Margin = new System.Windows.Forms.Padding(3, 3, 15, 3);
+            this.btnExp.Name = "btnExp";
+            this.btnExp.Size = new System.Drawing.Size(101, 100);
+            this.btnExp.TabIndex = 3;
+            this.btnExp.Text = "Experience";
+            this.btnExp.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnExp.UseVisualStyleBackColor = false;
             // 
-            // button4
+            // btnEdu
             // 
-            this.button4.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.button4.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Malgun Gothic", 12F);
-            this.button4.Location = new System.Drawing.Point(344, 0);
-            this.button4.Margin = new System.Windows.Forms.Padding(3, 3, 15, 3);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(100, 100);
-            this.button4.TabIndex = 2;
-            this.button4.Text = "About Me";
-            this.button4.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button4.UseVisualStyleBackColor = false;
+            this.btnEdu.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.btnEdu.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btnEdu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEdu.Font = new System.Drawing.Font("Malgun Gothic", 12F);
+            this.btnEdu.Location = new System.Drawing.Point(343, 0);
+            this.btnEdu.Margin = new System.Windows.Forms.Padding(3, 3, 15, 3);
+            this.btnEdu.Name = "btnEdu";
+            this.btnEdu.Size = new System.Drawing.Size(101, 100);
+            this.btnEdu.TabIndex = 2;
+            this.btnEdu.Text = "Education";
+            this.btnEdu.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnEdu.UseVisualStyleBackColor = false;
             // 
-            // button5
+            // btnLinks
             // 
-            this.button5.BackColor = System.Drawing.Color.CornflowerBlue;
-            this.button5.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Malgun Gothic", 12F);
-            this.button5.Location = new System.Drawing.Point(671, 0);
-            this.button5.Margin = new System.Windows.Forms.Padding(3, 3, 15, 3);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(100, 100);
-            this.button5.TabIndex = 7;
-            this.button5.Text = "About Me";
-            this.button5.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button5.UseVisualStyleBackColor = false;
+            this.btnLinks.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.btnLinks.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btnLinks.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLinks.Font = new System.Drawing.Font("Malgun Gothic", 12F);
+            this.btnLinks.Location = new System.Drawing.Point(670, 0);
+            this.btnLinks.Margin = new System.Windows.Forms.Padding(3, 3, 15, 3);
+            this.btnLinks.Name = "btnLinks";
+            this.btnLinks.Size = new System.Drawing.Size(101, 100);
+            this.btnLinks.TabIndex = 7;
+            this.btnLinks.Text = "Links";
+            this.btnLinks.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnLinks.UseVisualStyleBackColor = false;
             // 
-            // button7
+            // btnContact
             // 
-            this.button7.BackColor = System.Drawing.Color.CornflowerBlue;
-            this.button7.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button7.Font = new System.Drawing.Font("Malgun Gothic", 12F);
-            this.button7.Location = new System.Drawing.Point(453, 0);
-            this.button7.Margin = new System.Windows.Forms.Padding(3, 3, 15, 3);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(100, 100);
-            this.button7.TabIndex = 5;
-            this.button7.Text = "About Me";
-            this.button7.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button7.UseVisualStyleBackColor = false;
+            this.btnContact.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.btnContact.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btnContact.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnContact.Font = new System.Drawing.Font("Malgun Gothic", 12F);
+            this.btnContact.Location = new System.Drawing.Point(452, 0);
+            this.btnContact.Margin = new System.Windows.Forms.Padding(3, 3, 15, 3);
+            this.btnContact.Name = "btnContact";
+            this.btnContact.Size = new System.Drawing.Size(101, 100);
+            this.btnContact.TabIndex = 5;
+            this.btnContact.Text = "Contact";
+            this.btnContact.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnContact.UseVisualStyleBackColor = false;
             // 
-            // button8
+            // btnRef
             // 
-            this.button8.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.button8.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button8.Font = new System.Drawing.Font("Malgun Gothic", 12F);
-            this.button8.Location = new System.Drawing.Point(562, 0);
-            this.button8.Margin = new System.Windows.Forms.Padding(3, 3, 15, 3);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(100, 100);
-            this.button8.TabIndex = 4;
-            this.button8.Text = "About Me";
-            this.button8.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button8.UseVisualStyleBackColor = false;
+            this.btnRef.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.btnRef.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btnRef.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRef.Font = new System.Drawing.Font("Malgun Gothic", 12F);
+            this.btnRef.Location = new System.Drawing.Point(561, 0);
+            this.btnRef.Margin = new System.Windows.Forms.Padding(3, 3, 15, 3);
+            this.btnRef.Name = "btnRef";
+            this.btnRef.Size = new System.Drawing.Size(101, 100);
+            this.btnRef.TabIndex = 4;
+            this.btnRef.Text = "References";
+            this.btnRef.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnRef.UseVisualStyleBackColor = false;
+            // 
+            // lblMichal
+            // 
+            this.lblMichal.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblMichal.AutoSize = true;
+            this.lblMichal.BackColor = System.Drawing.Color.Transparent;
+            this.lblMichal.Font = new System.Drawing.Font("Malgun Gothic", 20F);
+            this.lblMichal.ForeColor = System.Drawing.Color.Black;
+            this.lblMichal.Location = new System.Drawing.Point(260, 15);
+            this.lblMichal.Name = "lblMichal";
+            this.lblMichal.Size = new System.Drawing.Size(249, 74);
+            this.lblMichal.TabIndex = 12;
+            this.lblMichal.Text = "Michał Kordos\r\nbackend developer";
+            this.lblMichal.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // AccountControl
             // 
@@ -204,6 +221,8 @@
             this.Size = new System.Drawing.Size(1101, 542);
             ((System.ComponentModel.ISupportInitialize)(this.pbx)).EndInit();
             this.panelUser.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -214,13 +233,14 @@
         private System.Windows.Forms.PictureBox pbx;
         private System.Windows.Forms.Panel panelUser;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnSkills;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnLinks;
+        private System.Windows.Forms.Button btnContact;
+        private System.Windows.Forms.Button btnRef;
+        private System.Windows.Forms.Button btnExp;
+        private System.Windows.Forms.Button btnEdu;
+        private System.Windows.Forms.Button btnAboutMe;
+        private System.Windows.Forms.Label lblMichal;
     }
 }
