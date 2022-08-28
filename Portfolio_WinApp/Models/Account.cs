@@ -12,5 +12,13 @@ namespace Portfolio_WinApp.Models
         public string Password { get; set; }
         public int Image { get; set; }
         public int LoginCount { get; set; }
+
+        public void ChangeImage()
+        {
+            if (Image == 3)
+                Image = 0;
+            else
+                Image++;
+        }
     }
 }
