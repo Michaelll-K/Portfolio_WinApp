@@ -50,6 +50,7 @@
             this.lblInfo = new System.Windows.Forms.Label();
             this.pbxChat = new System.Windows.Forms.PictureBox();
             this.btnHome = new System.Windows.Forms.Button();
+            this.lblError = new System.Windows.Forms.Label();
             this.panelMain.SuspendLayout();
             this.panelInfo.SuspendLayout();
             this.panelLogin.SuspendLayout();
@@ -196,6 +197,7 @@
             // panelLogin
             // 
             this.panelLogin.BackColor = System.Drawing.Color.RoyalBlue;
+            this.panelLogin.Controls.Add(this.lblError);
             this.panelLogin.Controls.Add(this.btnSignIn);
             this.panelLogin.Controls.Add(this.txtLogin);
             this.panelLogin.Controls.Add(this.txtPassword);
@@ -324,6 +326,17 @@
             this.btnHome.UseVisualStyleBackColor = false;
             this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
             // 
+            // lblError
+            // 
+            this.lblError.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.lblError.Font = new System.Drawing.Font("Malgun Gothic", 11F, System.Drawing.FontStyle.Bold);
+            this.lblError.ForeColor = System.Drawing.Color.RosyBrown;
+            this.lblError.Location = new System.Drawing.Point(459, 450);
+            this.lblError.Name = "lblError";
+            this.lblError.Size = new System.Drawing.Size(100, 69);
+            this.lblError.TabIndex = 6;
+            this.lblError.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -376,6 +389,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnHome;
         private System.Windows.Forms.Button btnSignIn;
+        private System.Windows.Forms.Label lblError;
     }
 }
 

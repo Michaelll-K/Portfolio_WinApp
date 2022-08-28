@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Portfolio_WinApp.Controls;
+using Portfolio_WinApp.Tools;
 
 namespace Portfolio_WinApp
 {
@@ -106,7 +107,17 @@ namespace Portfolio_WinApp
 
         private void btnSignIn_Click(object sender, EventArgs e)
         {
-            account.Visible = true;
+            LoginManager lm = new LoginManager();
+
+            var login = txtLogin.Text;
+            var password = txtPassword.Text;
+
+            if (lm.CheckIfCorrect(login, password))
+                account.Visible = true;
+            else
+            {
+                lblError.Text = "Error! Invalid login or password";
+            }
         }
     }
 }
