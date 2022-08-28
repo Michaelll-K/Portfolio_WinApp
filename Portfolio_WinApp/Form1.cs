@@ -115,9 +115,7 @@ namespace Portfolio_WinApp
             if (lm.CheckIfCorrect(login, password))
                 account.Visible = true;
             else
-            {
                 lblError.Text = "Error! Invalid login or password";
-            }
         }
     }
 }
