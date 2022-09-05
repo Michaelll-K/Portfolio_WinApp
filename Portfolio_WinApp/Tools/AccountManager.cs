@@ -34,6 +34,9 @@ namespace Portfolio_WinApp.Tools
             if (!fileInfo.Exists)
                 File.CreateText(location).Close();
 
+            FileManager fm = new FileManager(location);
+            Accounts = fm.GetAccounts();
+
         }
 
         public Account GetAccount(string login)

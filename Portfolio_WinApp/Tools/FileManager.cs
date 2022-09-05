@@ -37,8 +37,8 @@ namespace Portfolio_WinApp.Tools
                 {
                     Login = model[0],
                     Password = model[1],
-                    Image = Convert.ToInt32(model[3]),
-                    LoginCount = Convert.ToInt32(model[4])
+                    Image = Convert.ToInt32(model[2]),
+                    LoginCount = Convert.ToInt32(model[3])
                 };
 
                 accounts.Add(account);
