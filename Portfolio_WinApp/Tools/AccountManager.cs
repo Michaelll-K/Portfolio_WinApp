@@ -1,19 +1,30 @@
 ﻿using Portfolio_WinApp.Models;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace Portfolio_WinApp.Tools
 {
+    /*
+    //gets the directory where the program is launched from and adds the foldername
+    string path = Path.Combine(Environment.CurrentDirectory, "foldername");
+
+    //Creates a directory(folder) if it doesen't exist
+    Directory.CreateDirectory(path);
+    */
     internal class AccountManager
     {
         public List<Account> Accounts { get; set; }
 
+        private string path = Path.Combine(Environment.CurrentDirectory, "Accounts");
+        
         public AccountManager()
         {
             Accounts = new List<Account>();
+            Directory.CreateDirectory(path);
         }
 
         public Account GetAccount(string login)

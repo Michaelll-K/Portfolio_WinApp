@@ -175,6 +175,7 @@
             this.btnSaveSignUp.Text = "Sign up!";
             this.btnSaveSignUp.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSaveSignUp.UseVisualStyleBackColor = false;
+            this.btnSaveSignUp.Click += new System.EventHandler(this.btnSaveSignUp_Click);
             // 
             // pbxChat
             // 
