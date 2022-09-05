@@ -19,12 +19,27 @@ namespace Portfolio_WinApp.Tools
     {
         public List<Account> Accounts { get; set; }
 
-        private string path = Path.Combine(Environment.CurrentDirectory, "Accounts");
+        private readonly string path = Path.Combine(Environment.CurrentDirectory, "Accounts");
+        private readonly string location;
         
         public AccountManager()
         {
             Accounts = new List<Account>();
             Directory.CreateDirectory(path);
+            location = Path.Combine(path, "\\Accounts.txt");
+
+            FileInfo fileInfo = new FileInfo(location);
+
+            if (!fileInfo.Exists)
+                File.CreateText(location).Close();
+
+            string txt = File.ReadAllText(location);
+
+            string[] tabPomocnicza = new string[1];
+            tabPomocnicza[0] = "\r\n";
+
+            List<string> lines = txt.Split(tabPomocnicza, StringSplitOptions.RemoveEmptyEntries).ToList();
+
         }
 
         public Account GetAccount(string login)
