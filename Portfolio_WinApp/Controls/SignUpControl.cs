@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Portfolio_WinApp.Tools;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -41,6 +42,8 @@ namespace Portfolio_WinApp.Controls
 
         private void btnSaveSignUp_Click(object sender, EventArgs e)
         {
+            AccountManager am = new AccountManager();
+            
         }
     }
 }
