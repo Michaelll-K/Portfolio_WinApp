@@ -21,6 +21,7 @@ namespace Portfolio_WinApp.Tools
 
         private readonly string path = Path.Combine(Environment.CurrentDirectory, "Accounts");
         private readonly string location;
+        private FileManager fileManager;
         
         public AccountManager()
         {
@@ -34,8 +35,8 @@ namespace Portfolio_WinApp.Tools
             if (!fileInfo.Exists)
                 File.CreateText(location).Close();
 
-            FileManager fm = new FileManager(location);
-            Accounts = fm.GetAccounts();
+            fileManager = new FileManager(location);
+            Accounts = fileManager.GetAccounts();
 
         }
 
@@ -47,6 +48,8 @@ namespace Portfolio_WinApp.Tools
         public void AddAccount(Account account)
         {
             Accounts.Add(account);
+
+            fileManager.SaveAccounts(Accounts);
         }
     }
 }
