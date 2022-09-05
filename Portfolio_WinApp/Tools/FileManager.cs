@@ -10,17 +10,22 @@ namespace Portfolio_WinApp.Tools
 {
     internal class FileManager
     {
-
-        public List<Account> GetAccounts(string path)
+        string path;
+        List<string> lines;
+        public FileManager(string path)
         {
-            List<Account> accounts = new List<Account>();
-
+            this.path = path;
             string txt = File.ReadAllText(path);
 
             string[] tabPomocnicza = new string[1];
             tabPomocnicza[0] = "\r\n";
 
-            List<string> lines = txt.Split(tabPomocnicza, StringSplitOptions.RemoveEmptyEntries).ToList();
+            lines = txt.Split(tabPomocnicza, StringSplitOptions.RemoveEmptyEntries).ToList();
+        }
+
+        public List<Account> GetAccounts()
+        {
+            List<Account> accounts = new List<Account>();
 
             List<string> model;
 
@@ -40,6 +45,16 @@ namespace Portfolio_WinApp.Tools
             }
 
             return accounts;
+        }
+
+        public void SaveAccounts(List<Account> accounts)
+        {
+            foreach (Account account in accounts)
+            {
+                lines.Add($"{account.Login};{account.Password};{account.Image};{account.LoginCount}");
+            }
+
+            File.WriteAllLines(path, lines);
         }
     }
 }
