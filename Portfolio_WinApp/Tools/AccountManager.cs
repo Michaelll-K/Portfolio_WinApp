@@ -25,6 +25,7 @@ namespace Portfolio_WinApp.Tools
         
         public AccountManager()
         {
+            //fill Accounts list
             Accounts = new List<Account>();
 
             Directory.CreateDirectory(path);
@@ -40,11 +41,20 @@ namespace Portfolio_WinApp.Tools
 
         }
 
+        /// <summary>
+        /// Get specified account depend on login
+        /// </summary>
+        /// <param name="login">Login of the account</param>
+        /// <returns>Returns Account with specific login</returns>
         public Account GetAccount(string login)
         {
             return Accounts.FirstOrDefault(a => a.Login == login);
         }
 
+        /// <summary>
+        /// Adds new account to Accounts list
+        /// </summary>
+        /// <param name="account">Account object to add</param>
         public void AddAccount(Account account)
         {
             Accounts.Add(account);

@@ -14,6 +14,7 @@ namespace Portfolio_WinApp.Tools
         List<string> lines;
         public FileManager(string path)
         {
+            //acces to file
             this.path = path;
             string txt = File.ReadAllText(path);
 
@@ -23,6 +24,10 @@ namespace Portfolio_WinApp.Tools
             lines = txt.Split(tabPomocnicza, StringSplitOptions.RemoveEmptyEntries).ToList();
         }
 
+        /// <summary>
+        /// Get acces to the Account file and take rows into single Account object
+        /// </summary>
+        /// <returns>List of Accounts</returns>
         public List<Account> GetAccounts()
         {
             List<Account> accounts = new List<Account>();
@@ -47,6 +52,10 @@ namespace Portfolio_WinApp.Tools
             return accounts;
         }
 
+        /// <summary>
+        /// Saves Accounts in file
+        /// </summary>
+        /// <param name="accounts">List of all accounts thah will be saved</param>
         public void SaveAccounts(List<Account> accounts)
         {
             foreach (Account account in accounts)

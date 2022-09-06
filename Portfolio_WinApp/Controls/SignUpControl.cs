@@ -24,6 +24,7 @@ namespace Portfolio_WinApp.Controls
 
         private void SignUpControl_Load(object sender, EventArgs e)
         {
+            //text animation
             text = lblInfo.Text;
             lblInfo.Text = "";
             tInfo.Start();
