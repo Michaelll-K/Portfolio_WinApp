@@ -191,6 +191,7 @@
             // rbtImage1
             // 
             this.rbtImage1.AutoSize = true;
+            this.rbtImage1.Checked = true;
             this.rbtImage1.Location = new System.Drawing.Point(927, 142);
             this.rbtImage1.Name = "rbtImage1";
             this.rbtImage1.Size = new System.Drawing.Size(60, 17);
@@ -206,7 +207,6 @@
             this.rbtImage2.Name = "rbtImage2";
             this.rbtImage2.Size = new System.Drawing.Size(60, 17);
             this.rbtImage2.TabIndex = 24;
-            this.rbtImage2.TabStop = true;
             this.rbtImage2.Text = "Image2";
             this.rbtImage2.UseVisualStyleBackColor = true;
             // 
@@ -217,7 +217,6 @@
             this.rbtImage3.Name = "rbtImage3";
             this.rbtImage3.Size = new System.Drawing.Size(60, 17);
             this.rbtImage3.TabIndex = 25;
-            this.rbtImage3.TabStop = true;
             this.rbtImage3.Text = "Image3";
             this.rbtImage3.UseVisualStyleBackColor = true;
             // 
@@ -228,7 +227,6 @@
             this.rbtImage4.Name = "rbtImage4";
             this.rbtImage4.Size = new System.Drawing.Size(60, 17);
             this.rbtImage4.TabIndex = 26;
-            this.rbtImage4.TabStop = true;
             this.rbtImage4.Text = "Image4";
             this.rbtImage4.UseVisualStyleBackColor = true;
             // 

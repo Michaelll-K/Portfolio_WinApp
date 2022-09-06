@@ -1,4 +1,5 @@
-﻿using Portfolio_WinApp.Tools;
+﻿using Portfolio_WinApp.Models;
+using Portfolio_WinApp.Tools;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -43,6 +44,12 @@ namespace Portfolio_WinApp.Controls
 
         private void btnSaveSignUp_Click(object sender, EventArgs e)
         {
+            Account account = new Account()
+            {
+                Login = txtLogin.Text,
+                Password = txtPassword.Text,
+            };
+
             AccountManager am = new AccountManager();
             
         }
