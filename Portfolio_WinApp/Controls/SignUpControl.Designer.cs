@@ -199,6 +199,7 @@
             this.rbtImage1.TabStop = true;
             this.rbtImage1.Text = "Image1";
             this.rbtImage1.UseVisualStyleBackColor = true;
+            this.rbtImage1.CheckedChanged += new System.EventHandler(this.rbtImage1_CheckedChanged);
             // 
             // rbtImage2
             // 
@@ -209,6 +210,7 @@
             this.rbtImage2.TabIndex = 24;
             this.rbtImage2.Text = "Image2";
             this.rbtImage2.UseVisualStyleBackColor = true;
+            this.rbtImage2.CheckedChanged += new System.EventHandler(this.rbtImage2_CheckedChanged);
             // 
             // rbtImage3
             // 
@@ -219,6 +221,7 @@
             this.rbtImage3.TabIndex = 25;
             this.rbtImage3.Text = "Image3";
             this.rbtImage3.UseVisualStyleBackColor = true;
+            this.rbtImage3.CheckedChanged += new System.EventHandler(this.rbtImage3_CheckedChanged);
             // 
             // rbtImage4
             // 
@@ -229,6 +232,7 @@
             this.rbtImage4.TabIndex = 26;
             this.rbtImage4.Text = "Image4";
             this.rbtImage4.UseVisualStyleBackColor = true;
+            this.rbtImage4.CheckedChanged += new System.EventHandler(this.rbtImage4_CheckedChanged);
             // 
             // SignUpControl
             // 

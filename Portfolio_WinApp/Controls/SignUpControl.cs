@@ -15,6 +15,7 @@ namespace Portfolio_WinApp.Controls
 {
     public partial class SignUpControl : UserControl
     {
+        private int image;
         public SignUpControl()
         {
             InitializeComponent();
@@ -42,12 +43,35 @@ namespace Portfolio_WinApp.Controls
                 tInfo.Stop();
         }
 
+        private void rbtImage1_CheckedChanged(object sender, EventArgs e)
+        {
+            RadioButton rb = sender as RadioButton;
+            if (rb.Checked)
+                MessageBox.Show("cos");
+        }
+
+        private void rbtImage2_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void rbtImage3_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void rbtImage4_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
         private void btnSaveSignUp_Click(object sender, EventArgs e)
         {
+            
             Account account = new Account()
             {
                 Login = txtLogin.Text,
                 Password = txtPassword.Text,
+                
             };
 
             AccountManager am = new AccountManager();
