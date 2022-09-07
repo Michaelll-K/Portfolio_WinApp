@@ -72,12 +72,13 @@ namespace Portfolio_WinApp.Controls
         }
         private void btnSaveSignUp_Click(object sender, EventArgs e)
         {
-            
+
             Account account = new Account()
             {
                 Login = txtLogin.Text,
                 Password = txtPassword.Text,
-                
+                Image = image,
+                LoginCount = 0
             };
 
             AccountManager am = new AccountManager();
