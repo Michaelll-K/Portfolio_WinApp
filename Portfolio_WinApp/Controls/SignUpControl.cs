@@ -72,6 +72,7 @@ namespace Portfolio_WinApp.Controls
         }
         private void btnSaveSignUp_Click(object sender, EventArgs e)
         {
+           
 
             Account account = new Account()
             {
@@ -82,6 +83,7 @@ namespace Portfolio_WinApp.Controls
             };
 
             AccountManager am = new AccountManager();
+            am.AddAccount(account);
             
         }
     }

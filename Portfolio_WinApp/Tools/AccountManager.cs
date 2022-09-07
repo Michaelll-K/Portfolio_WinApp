@@ -59,7 +59,7 @@ namespace Portfolio_WinApp.Tools
         {
             Accounts.Add(account);
 
-            fileManager.SaveAccounts(Accounts);
+            fileManager.SaveAccounts(account);
         }
     }
 }

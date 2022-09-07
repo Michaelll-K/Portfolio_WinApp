@@ -56,12 +56,9 @@ namespace Portfolio_WinApp.Tools
         /// Saves Accounts in file
         /// </summary>
         /// <param name="accounts">List of all accounts thah will be saved</param>
-        public void SaveAccounts(List<Account> accounts)
+        public void SaveAccounts(Account account)
         {
-            foreach (Account account in accounts)
-            {
-                lines.Add($"{account.Login};{account.Password};{account.Image};{account.LoginCount}");
-            }
+            lines.Add($"{account.Login};{account.Password};{account.Image};{account.LoginCount}");
 
             File.WriteAllLines(path, lines);
         }
