@@ -45,6 +45,10 @@
             this.rbtImage2 = new System.Windows.Forms.RadioButton();
             this.rbtImage3 = new System.Windows.Forms.RadioButton();
             this.rbtImage4 = new System.Windows.Forms.RadioButton();
+            this.lblErrorLogin = new System.Windows.Forms.Label();
+            this.lblErrorPassword = new System.Windows.Forms.Label();
+            this.lblErrorRepeat = new System.Windows.Forms.Label();
+            this.lblErrorExist = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pbxChat)).BeginInit();
             this.SuspendLayout();
             // 
@@ -234,10 +238,50 @@
             this.rbtImage4.UseVisualStyleBackColor = true;
             this.rbtImage4.CheckedChanged += new System.EventHandler(this.rbtImage4_CheckedChanged);
             // 
+            // lblErrorLogin
+            // 
+            this.lblErrorLogin.ForeColor = System.Drawing.Color.Firebrick;
+            this.lblErrorLogin.Location = new System.Drawing.Point(783, 142);
+            this.lblErrorLogin.Name = "lblErrorLogin";
+            this.lblErrorLogin.Size = new System.Drawing.Size(72, 43);
+            this.lblErrorLogin.TabIndex = 27;
+            this.lblErrorLogin.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // lblErrorPassword
+            // 
+            this.lblErrorPassword.ForeColor = System.Drawing.Color.Firebrick;
+            this.lblErrorPassword.Location = new System.Drawing.Point(783, 228);
+            this.lblErrorPassword.Name = "lblErrorPassword";
+            this.lblErrorPassword.Size = new System.Drawing.Size(72, 43);
+            this.lblErrorPassword.TabIndex = 28;
+            this.lblErrorPassword.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // lblErrorRepeat
+            // 
+            this.lblErrorRepeat.ForeColor = System.Drawing.Color.Firebrick;
+            this.lblErrorRepeat.Location = new System.Drawing.Point(783, 314);
+            this.lblErrorRepeat.Name = "lblErrorRepeat";
+            this.lblErrorRepeat.Size = new System.Drawing.Size(72, 43);
+            this.lblErrorRepeat.TabIndex = 29;
+            this.lblErrorRepeat.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // lblErrorExist
+            // 
+            this.lblErrorExist.ForeColor = System.Drawing.Color.Firebrick;
+            this.lblErrorExist.Location = new System.Drawing.Point(749, 417);
+            this.lblErrorExist.Name = "lblErrorExist";
+            this.lblErrorExist.Size = new System.Drawing.Size(72, 43);
+            this.lblErrorExist.TabIndex = 30;
+            this.lblErrorExist.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
             // SignUpControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.lblErrorExist);
+            this.Controls.Add(this.lblErrorRepeat);
+            this.Controls.Add(this.lblErrorPassword);
+            this.Controls.Add(this.lblErrorLogin);
             this.Controls.Add(this.rbtImage4);
             this.Controls.Add(this.rbtImage3);
             this.Controls.Add(this.rbtImage2);
@@ -280,5 +324,9 @@
         private System.Windows.Forms.RadioButton rbtImage2;
         private System.Windows.Forms.RadioButton rbtImage3;
         private System.Windows.Forms.RadioButton rbtImage4;
+        private System.Windows.Forms.Label lblErrorLogin;
+        private System.Windows.Forms.Label lblErrorPassword;
+        private System.Windows.Forms.Label lblErrorRepeat;
+        private System.Windows.Forms.Label lblErrorExist;
     }
 }

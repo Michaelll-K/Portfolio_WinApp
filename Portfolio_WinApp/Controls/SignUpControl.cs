@@ -72,18 +72,41 @@ namespace Portfolio_WinApp.Controls
         }
         private void btnSaveSignUp_Click(object sender, EventArgs e)
         {
-           
+            lblErrorPassword.Text = "";
+            lblErrorRepeat.Text = "";
+            lblErrorLogin.Text = "";
+            lblErrorExist.Text = "";
 
-            Account account = new Account()
+            if (txtLogin.Text != "" && txtPassword.Text != "" && txtPassword.Text == txtRepeatPassword.Text)
             {
-                Login = txtLogin.Text,
-                Password = txtPassword.Text,
-                Image = image,
-                LoginCount = 0
-            };
+                Account account = new Account()
+                {
+                    Login = txtLogin.Text,
+                    Password = txtPassword.Text,
+                    Image = image,
+                    LoginCount = 0
+                };
 
-            AccountManager am = new AccountManager();
-            am.AddAccount(account);
+                AccountManager am = new AccountManager();
+                am.AddAccount(account);
+
+                Hide();
+
+            }
+            else if (txtLogin.Text != "" && txtPassword.Text != "")
+            {
+                lblErrorRepeat.Text = "Check your repeted password";
+            } 
+            else if (txtLogin.Text != "")
+            {
+                lblErrorPassword.Text = "Password can't be empty";
+            } 
+            else
+            {
+                lblErrorLogin.Text = "Login can't be empty";
+            }
+
+
             
         }
     }
