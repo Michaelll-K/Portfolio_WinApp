@@ -35,6 +35,17 @@ namespace Portfolio_WinApp.Controls
             tInfo.Start();
         }
 
+        private void SignUpControl_VisibleChanged(object sender, EventArgs e)
+        {
+            txtLogin.Text = "";
+            txtPassword.Text = "";
+            txtRepeatPassword.Text = "";
+            rbtImage1.Checked = true;
+            rbtImage2.Checked = false;
+            rbtImage3.Checked = false;
+            rbtImage4.Checked = false;
+        }
+
         private void tInfo_Tick(object sender, EventArgs e)
         {
             if (len < text.Length)
@@ -118,5 +129,7 @@ namespace Portfolio_WinApp.Controls
 
             
         }
+
+        
     }
 }

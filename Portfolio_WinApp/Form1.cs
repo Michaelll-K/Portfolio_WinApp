@@ -101,8 +101,8 @@ namespace Portfolio_WinApp
 
         private void btnHome_Click(object sender, EventArgs e)
         {
-            signUp.Visible = false;
-            account.Visible = false;
+            signUp.Hide();
+            account.Hide();
         }
 
         private void btnSignIn_Click(object sender, EventArgs e)
@@ -113,7 +113,7 @@ namespace Portfolio_WinApp
             var password = txtPassword.Text;
 
             if (lm.CheckIfCorrect(login, password))
-                account.Visible = true;
+                account.Show();
             else
                 lblError.Text = "Error! Invalid login or password";
         }

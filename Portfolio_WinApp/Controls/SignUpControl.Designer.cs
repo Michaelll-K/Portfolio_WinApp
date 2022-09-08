@@ -300,6 +300,7 @@
             this.Name = "SignUpControl";
             this.Size = new System.Drawing.Size(1101, 542);
             this.Load += new System.EventHandler(this.SignUpControl_Load);
+            this.VisibleChanged += new System.EventHandler(this.SignUpControl_VisibleChanged);
             ((System.ComponentModel.ISupportInitialize)(this.pbxChat)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
