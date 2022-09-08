@@ -82,7 +82,7 @@ namespace Portfolio_WinApp.Controls
 
             if (txtLogin.Text != "" && txtPassword.Text != "" && txtPassword.Text == txtRepeatPassword.Text)
             {
-                if (loginManager.CheckIfExists(txtLogin.Text, accountManager.Accounts))
+                if (loginManager.CheckIfNotExists(txtLogin.Text, accountManager.Accounts))
                 {
                     Account account = new Account()
                     {
