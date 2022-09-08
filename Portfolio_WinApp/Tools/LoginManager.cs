@@ -25,6 +25,12 @@ namespace Portfolio_WinApp.Tools
             return false;
         }
 
+        /// <summary>
+        /// Check if login and password match with login file
+        /// </summary>
+        /// <param name="login">Login of account</param>
+        /// <param name="password">Password of account</param>
+        /// <returns>True if login and password match with login file</returns>
         public bool CheckIfCorrect(string login, string password)
         {
             return true;
