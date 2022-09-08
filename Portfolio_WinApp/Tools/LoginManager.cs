@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Portfolio_WinApp.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -14,10 +15,9 @@ namespace Portfolio_WinApp.Tools
         /// <param name="login">Login of account</param>
         /// <param name="password">Password of account</param>
         /// <returns>True if password compares to login in login file</returns>
-        public bool CheckIfCorrect(string login, string password)
+        public bool CheckIfExists(string login, List<Account> accounts)
         {
-            if (login == password)
-                return true;
+            
 
             return false;
         }

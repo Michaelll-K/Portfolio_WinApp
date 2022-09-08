@@ -15,6 +15,9 @@ namespace Portfolio_WinApp.Controls
 {
     public partial class SignUpControl : UserControl
     {
+        private AccountManager accountManager = new AccountManager();
+        private LoginManager loginManager = new LoginManager();
+
         private int image = 0;
         public SignUpControl()
         {
@@ -79,18 +82,24 @@ namespace Portfolio_WinApp.Controls
 
             if (txtLogin.Text != "" && txtPassword.Text != "" && txtPassword.Text == txtRepeatPassword.Text)
             {
-                Account account = new Account()
+                if (loginManager.CheckIfExists(txtLogin.Text, accountManager.Accounts))
                 {
-                    Login = txtLogin.Text,
-                    Password = txtPassword.Text,
-                    Image = image,
-                    LoginCount = 0
-                };
+                    Account account = new Account()
+                    {
+                        Login = txtLogin.Text,
+                        Password = txtPassword.Text,
+                        Image = image,
+                        LoginCount = 0
+                    };
 
-                AccountManager am = new AccountManager();
-                am.AddAccount(account);
+                    accountManager.AddAccount(account);
 
-                Hide();
+                    Hide();
+                }
+                else
+                {
+                    lblErrorExist.Text = "User with that login already exist";
+                }
 
             }
             else if (txtLogin.Text != "" && txtPassword.Text != "")
